@@ -1,6 +1,13 @@
+
 import React from 'react'
 
 export default function Inicio() {
+  const {peliculas, getPeliculas}= usePeliculas();
+
+  useEffect(()=>{
+    getPeliculas(2);
+  },[]);
+  console.log(peliculas);
   return (
 
     <React.Fragment>
@@ -17,6 +24,7 @@ export default function Inicio() {
 
 
     </React.Fragment>
+    
     
     
     
