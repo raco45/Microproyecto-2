@@ -18,6 +18,14 @@ export default function Login() {
           alt="Sample image" />
       </div>
       <div class="mb-12 md:mb-0 md:w-8/12 lg:w-5/12 xl:w-5/12 mr-16">
+      <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-blue-700 dark:text-blue-700">
+          <img 
+          class="w-8 h-8 mr-2" 
+          src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo.svg" 
+          alt="logo"
+          />
+          Neiflis    
+      </a>
         <form>
           <div
             class="flex flex-row items-center justify-center lg:justify-start">
@@ -59,7 +67,7 @@ export default function Login() {
               data-te-ripple-init
               data-te-ripple-color="light"
               class="bg-blue-700 mx-1 h-9 w-9 rounded-full bg-primary uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]">
-              {/* <!-- Linkedin --> */}
+              {/* <!-- Google --> */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="mx-auto h-5 w-5"
