@@ -1,10 +1,11 @@
 import React from 'react'
-
+import { usePeliculas } from '../../Hooks/usePeliculas'
+import { useEffect } from 'react';
 export default function Inicio() {
   const {peliculas, getPeliculas}= usePeliculas();
 
   useEffect(()=>{
-    getPeliculas();
+    getPeliculas(2);
   },[]);
   console.log(peliculas);
   return (
