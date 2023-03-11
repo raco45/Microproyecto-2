@@ -1,10 +1,11 @@
+
 import React from 'react'
 
 export default function Inicio() {
   const {peliculas, getPeliculas}= usePeliculas();
 
   useEffect(()=>{
-    getPeliculas();
+    getPeliculas(2);
   },[]);
   console.log(peliculas);
   return (
@@ -27,6 +28,5 @@ export default function Inicio() {
     
 
 
-  
   )
 }
