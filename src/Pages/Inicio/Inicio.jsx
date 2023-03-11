@@ -6,16 +6,13 @@ export default function Inicio() {
     <React.Fragment>
       
       <div className=''>
-        <img className='absolute z-0' src="" alt="" />
-        <h1 className='font-bold text-blue-800 text-4xl mt-3 text-center mt-8'> Bienvenido a tu app de peliculas </h1>
+        <img className='absolute z-0' src="src\assets\beyond-the-universe-4.jpg" alt="" />
+        <div className='relative z-5'>
+        <h1 className='font-bold text-blue-800 text-4xl text-center mt-8 flex justify-center grid '> Bienvenido a tu app de peliculas </h1>
+      </div>
+
       </div>
       
-      <div>
-
-
-
-
-      </div>
 
 
 
