@@ -1,4 +1,5 @@
 import React from 'react'
+import { REGISTER_URL } from '../../Constants/urls'
 
 export default function Login() {
 
@@ -133,10 +134,9 @@ export default function Login() {
             <p class="mt-2 mb-0 pt-1 text-sm font-semibold">
               No tienes una cuenta?
               <a
-                href="#!"
+                href={REGISTER_URL}
                 class="text-danger transition duration-150 ease-in-out hover:text-danger-600 focus:text-danger-600 active:text-danger-700"
-                > Registrate</a
-              >
+                > Registrate</a>
             </p>
           </div>
         </form>
