@@ -6,18 +6,18 @@ export default function Login() {
   
 
   return (
-  <section classNameName="h-screen">
-  <div classNameName="h-full">
+  <section className="h-screen">
+  <div className="h-full">
     <div
-      classNameName="g-6 flex h-full flex-wrap items-center justify-center lg:justify-between ml-16">
+      className="g-6 flex h-full flex-wrap items-center justify-center lg:justify-between ml-16">
       <div
-        classNameName="shrink-1 mb-12 grow-0 basis-auto md:mb-0 md:w-9/12 md:shrink-0 lg:w-6/12 xl:w-6/12">
+        className="shrink-1 mb-12 grow-0 basis-auto md:mb-0 md:w-9/12 md:shrink-0 lg:w-6/12 xl:w-6/12">
         <img
           src="src\assets\imagenlogin.jpg"
-          classNameName="w-full rounded-3xl"
+          className="w-full rounded-3xl"
           alt="Sample image" />
       </div>
-      <div classNameName="mb-12 md:mb-0 md:w-8/12 lg:w-5/12 xl:w-5/12 mr-16">
+      <div className="mb-12 md:mb-0 md:w-8/12 lg:w-5/12 xl:w-5/12 mr-16">
       <a href="#" className="flex items-center mb-6 text-2xl font-semibold text-blue-700 dark:text-blue-700">
           <img 
           className="w-8 h-8 mr-2" 
@@ -55,7 +55,6 @@ export default function Login() {
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="mx-auto h-3.5 w-3.5"
-                className="mx-auto h-3.5 w-3.5"
                 fill="currentColor"
                 viewBox="0 0 24 24">
                 <path
@@ -68,7 +67,7 @@ export default function Login() {
               data-te-ripple-init
               data-te-ripple-color="light"
               className="bg-blue-700 mx-1 h-9 w-9 rounded-full bg-primary uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]">
-              {/* <!-- Linkedin --> */}
+              {/* <!-- Google --> */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="mx-auto h-5 w-5"
@@ -96,7 +95,7 @@ export default function Login() {
               id="exampleFormControlInput2"
               placeholder="Email address" />
             <label
-              for="exampleFormControlInput2"
+              htmlFor="exampleFormControlInput2"
               className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[1.15rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[1.15rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-neutral-200"
               >Correo electrónico
             </label>
@@ -110,7 +109,7 @@ export default function Login() {
               id="exampleFormControlInput22"
               placeholder="Password" />
             <label
-              for="exampleFormControlInput22"
+              htmlFor="exampleFormControlInput22"
               className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[1.15rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[1.15rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-neutral-200"
               >Contraseña
             </label>
@@ -125,7 +124,7 @@ export default function Login() {
                 id="exampleCheck2" />
               <label
                 className="inline-block pl-[0.15rem] hover:cursor-pointer"
-                for="exampleCheck2">
+                htmlFor="exampleCheck2">
                 Recordar contraseña
               </label>
             </div>
@@ -135,7 +134,7 @@ export default function Login() {
           <div className="text-center lg:text-left">
             <button
               type="button"
-              classNameName="bg-blue-700 inline-block rounded bg-primary px-7 pt-3 pb-2.5 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
+              className="bg-blue-700 inline-block rounded bg-primary px-7 pt-3 pb-2.5 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
               data-te-ripple-init
               data-te-ripple-color="light">
               Iniciar
@@ -143,10 +142,9 @@ export default function Login() {
             <p className="mt-2 mb-0 pt-1 text-sm font-semibold">
               No tienes una cuenta?
               <a
-                href="#!"
+                href={REGISTER_URL}
                 className="text-danger transition duration-150 ease-in-out hover:text-danger-600 focus:text-danger-600 active:text-danger-700"
-                > Registrate</a
-              >
+                > Registrate</a>
             </p>
           </div>
         </form>

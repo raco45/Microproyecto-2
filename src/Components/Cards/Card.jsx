@@ -15,11 +15,6 @@ return (
           <div className="bg-yellow-400 font-bold rounded-xl p-2">{pelicula.vote_average}</div>
         </div>
         <div>
-          <div className="text-sm text-gray-400 font-bold"> Lenguaje: {pelicula.original_language}</div>
-          <div className="text-sm text-gray-400"> Presupuesto: {pelicula.budget}</div>
-          <div className="text-sm text-gray-400"> Compania: {pelicula.budget}</div>
-
-
           <div className="text-sm text-gray-800">{pelicula.release_date}</div>
         </div>
           <p className=" text-gray-400 max-h-40 overflow-y-hidden text-xs">{pelicula.overview}</p>
