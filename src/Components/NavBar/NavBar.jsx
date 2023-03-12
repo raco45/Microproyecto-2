@@ -4,16 +4,11 @@ import { BUSCADOR_URL, DETALLE_URL, INICIO_URL, LOGIN_URL, REGISTER_URL } from '
 import styles from "./Navbar.module.css";
 export default function NavBar() {
   return (
-    <nav className={styles.navbar}>
+    <nav className={styles.navbar} font>
       <ul className={styles.menuList}>
         <li className={`${styles.menuItem} ${styles.menuItemLeft}`}>
           <Link to={INICIO_URL} className={styles.link}>
             <span>Inicio</span>
-          </Link>
-        </li>
-        <li className={`${styles.menuItem} ${styles.menuItemLeft}`}>
-          <Link to={DETALLE_URL} className={styles.link}>
-            <span>Detalles</span>
           </Link>
         </li>
         <li className={`${styles.menuItem} ${styles.menuItemLeft}`}>
