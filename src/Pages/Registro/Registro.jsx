@@ -2,69 +2,69 @@ import React from 'react'
 
 export default function Registro() {
   return (
-    <section class="bg-gray-50 dark:bg-gray-900">
-    <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-      <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
+    <section className="bg-gray-50 dark:bg-gray-900">
+    <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+      <a href="#" className="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
           <img 
-          class="w-8 h-8 mr-2" 
+          className="w-8 h-8 mr-2" 
           src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo.svg" 
           alt="logo"
           />
           Neiflis    
       </a>
-      <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
-          <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
-              <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
+      <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+          <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
+              <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
                   Crea tu propia cuenta
               </h1>
-              <form class="space-y-4 md:space-y-6" action="#">
+              <form className="space-y-4 md:space-y-6" action="#">
                   <div>
-                      <label for="name" 
-                      class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nombre completo</label>
+                      <label htmlFor="name" 
+                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nombre completo</label>
                       <input 
                       type="name" 
                       name="name" 
                       id="name" 
-                      class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
+                      className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
                       placeholder="Fulana de tal" 
                       required=""/>
                   </div>
                   <div>
-                      <label for="email" 
-                      class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Correo electrónico</label>
+                      <label htmlFor="email" 
+                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Correo electrónico</label>
                       <input 
                       type="email" 
                       name="email" 
                       id="email" 
-                      class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
+                      className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
                       placeholder="nombre@gmail.com" 
                       required=""/>
                   </div>
                   <div>
                       <label 
-                      for="password" 
-                      class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Contraseña</label>
+                     htmlFor="password" 
+                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Contraseña</label>
                       <input 
                       type="password" 
                       name="password" 
                       id="password" 
                       placeholder="••••••••" 
-                      class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
+                      className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
                       required=""/>
                   </div>
 
                   <div
-                  class="flex flex-row items-center justify-center lg:justify-start text-white">
-                  <p class="mb-0 mr-4 text-lg"> O inicia sesión con: </p>
+                  className="flex flex-row items-center justify-center lg:justify-start text-white">
+                  <p className="mb-0 mr-4 text-lg"> O inicia sesión con: </p>
                   <button
                     type="button"
                     data-te-ripple-init
                     data-te-ripple-color="light"
-                    class="bg-blue-700 mx-1 h-9 w-9 rounded-full bg-primary uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]">
+                    className="bg-blue-700 mx-1 h-9 w-9 rounded-full bg-primary uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]">
                     {/* <!-- Facebook --> */}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="mx-auto h-3.5 w-3.5"
+                      className="mx-auto h-3.5 w-3.5"
                       fill="currentColor"
                       viewBox="0 0 24 24">
                       <path
@@ -76,11 +76,11 @@ export default function Registro() {
                     type="button"
                     data-te-ripple-init
                     data-te-ripple-color="light"
-                    class="bg-blue-700 mx-1 h-9 w-9 rounded-full bg-primary uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]">
+                    className="bg-blue-700 mx-1 h-9 w-9 rounded-full bg-primary uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]">
                     {/* <!-- Twitter --> */}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="mx-auto h-3.5 w-3.5"
+                      className="mx-auto h-3.5 w-3.5"
                       fill="currentColor"
                       viewBox="0 0 24 24">
                       <path
@@ -92,11 +92,11 @@ export default function Registro() {
                     type="button"
                     data-te-ripple-init
                     data-te-ripple-color="light"
-                    class="bg-blue-700 mx-1 h-9 w-9 rounded-full bg-primary uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]">
+                    className="bg-blue-700 mx-1 h-9 w-9 rounded-full bg-primary uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]">
                     {/* <!-- Google --> */}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="mx-auto h-5 w-5"
+                      className="mx-auto h-5 w-5"
                       fill="currentColor"
                       viewBox="0 0 24 24">
                       <path
@@ -105,19 +105,19 @@ export default function Registro() {
                   </button>
                 </div>
 
-                  <div class="flex items-start">
-                      <div class="flex items-center h-5">
-                        <input id="terms" aria-describedby="terms" type="checkbox" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800" required=""/>
+                  <div className="flex items-start">
+                      <div className="flex items-center h-5">
+                        <input id="terms" aria-describedby="terms" type="checkbox" className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800" required=""/>
                       </div>
-                      <div class="ml-3 text-sm">
-                        <label for="terms" class="font-light text-gray-500 dark:text-gray-300">Acepto los
-                        <a class="font-medium text-primary-600 hover:underline dark:text-primary-500" href="#"> terminos y condiciones</a>
+                      <div className="ml-3 text-sm">
+                        <label htmlFor="terms" className="font-light text-gray-500 dark:text-gray-300">Acepto los
+                        <a className="font-medium text-primary-600 hover:underline dark:text-primary-500" href="#"> terminos y condiciones</a>
                         </label>
                       </div>
                   </div>
-                  <button type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Crea tu cuenta</button>
-                  <p class="text-sm font-light text-gray-500 dark:text-gray-400">
-                      Ya tienes una cuenta? <a href="#" class="font-medium text-primary-600 hover:underline dark:text-primary-500">Iniciar sesión aqui</a>
+                  <button type="submit" className="w-full text-white bg-blue-700 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Crea tu cuenta</button>
+                  <p className="text-sm font-light text-gray-500 dark:text-gray-400">
+                      Ya tienes una cuenta? <a href="#" className="font-medium text-primary-600 hover:underline dark:text-primary-500">Iniciar sesión aqui</a>
                   </p>
               </form>
           </div>
