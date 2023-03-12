@@ -12,11 +12,6 @@ export default function NavBar() {
           </Link>
         </li>
         <li className={`${styles.menuItem} ${styles.menuItemLeft}`}>
-          <Link to={DETALLE_URL} className={styles.link}>
-            <span>Detalles</span>
-          </Link>
-        </li>
-        <li className={`${styles.menuItem} ${styles.menuItemLeft}`}>
           <Link to={BUSCADOR_URL} className={styles.link}>
             <span>Buscador</span>
           </Link>
