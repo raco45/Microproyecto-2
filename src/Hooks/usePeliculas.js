@@ -3,7 +3,7 @@ import { fetchPelicula, fetchPeliculas, fetchUpcoming } from "../Utils/Movie-DB-
 
 export function usePeliculas(){
     const [peliculas, setPeliculas]=useState([]);
-    const [pelicula, setPelicula]= useState([]);
+    const [pelicula, setPelicula]= useState({});
     const [estrenos, setEstrenos]=useState([]);
 
     const getPeliculas= async (page)=>{
@@ -13,10 +13,12 @@ export function usePeliculas(){
     const getPelicula= async (movieId) =>{
          const {data}=await fetchPelicula(movieId);
          setPelicula(data);
+         console.log(data);
     };
     const getEstrenos= async () =>{
          const {data}=await fetchUpcoming();
          setEstrenos(data);
+         
     };
 
 

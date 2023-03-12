@@ -9,16 +9,16 @@ export default function Detalle() {
   const {pelicula, getPelicula}= usePeliculas();
   
   const {poster_path, vote_average,original_language ,title, budget, genres, companies, status, release_date, overview}= pelicula || {};
-  useEffect(()=>{
+  useEffect( ()=>{
     if(movieId){
       getPelicula(movieId);
+  
+      
     }
-  },[])
-  console.log(pelicula);
-
+  },[movieId]);
   
   return (
-  <React.Fragment>
+  
     <div className=" bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
       <div className="py-3 sm:max-w-xl sm:mx-auto">
         <div className="bg-white shadow-lg border-gray-100 max-h-80	 border sm:rounded-3xl p-8 flex space-x-8">
@@ -43,7 +43,7 @@ export default function Detalle() {
         </div>
       </div>
     </div>  
-</React.Fragment>
+
 )
 }
 
