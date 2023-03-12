@@ -18,7 +18,7 @@ export default function Inicio() {
       <a href="#" className=" mt-6 ml-6 flex items-center mb-6 text-2xl font-semibold text-blue-700 dark:text-blue-700">
           <img 
           className="w-8 h-8 mr-2" 
-          src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo.svg" 
+          src="src\assets\pngwing.com.png" 
           alt="logo"
           />
           Neiflis    

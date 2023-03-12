@@ -21,7 +21,7 @@ export default function Login() {
       <a href="#" className="flex items-center mb-6 text-2xl font-semibold text-blue-700 dark:text-blue-700">
           <img 
           className="w-8 h-8 mr-2" 
-          src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo.svg" 
+          src="src\assets\pngwing.com.png" 
           alt="logo"
           />
           Neiflis    
@@ -82,7 +82,7 @@ export default function Login() {
           <div
             className="my-4 flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-neutral-300 after:mt-0.5 after:flex-1 after:border-t after:border-neutral-300">
             <p
-              className="mx-4 mb-0 text-center font-semibold dark:text-white">
+              className="mx-4 mb-0 text-center font-semibold">
                O 
             </p>
           </div>
