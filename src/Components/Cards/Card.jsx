@@ -1,20 +1,19 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import { DETALLE_URL } from "../../constants/urls";
 export default function Card({pelicula}){
 
   return (
     <React.Fragment>
-  <div className="py-3 sm:max-w-xl sm:mx-auto">
-    <div className="shadow-lg border-gray-300 max-h-80 border sm:rounded-3xl p-8 flex space-x-2">
+  <div className="py-3 sm:max-w-xl md:mx-auto">
+    <div className="shadow-lg border-gray-300 max-h-96 border sm:rounded-3xl p-6 flex space-x-2">
       <div className="h-48 overflow-visible w-1/2">
-          <img className="rounded-3xl shadow-lg" src={pelicula.backdrop_path} alt=""/>
+          <img className="rounded-3xl shadow-lg h-48 " src= {`https://image.tmdb.org/t/p/w154${pelicula.poster_path}`} alt=' '/>
       </div>
       <div className="flex flex-col w-1/2 space-y-4">
         <div className="flex justify-between items-start">
-          <h2 className="text-lg font-bold">{pelicula.title}
+          <h2 className="text-lg font-bold">
           <Link
-              to='/peliculas/${pelicula.id}'
+             to={`/characters/${pelicula.id}`}
             >
               {pelicula.title}
             </Link>
