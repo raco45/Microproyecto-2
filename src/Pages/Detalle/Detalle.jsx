@@ -11,13 +11,14 @@ export default function Detalle() {
   const {getPelicula, pelicula}= usePeliculas();
   
   useEffect(()=>{
-    if(movieId){
-      getPelicula(movieId);
-    }
+    getPelicula(550);
+    // if(movieId){
+    // }
   },[]);
+  
+  console.log(pelicula);
 
 
-  console.log(movieId)
 
   return (
     <React.Fragment>
