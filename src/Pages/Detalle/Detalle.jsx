@@ -8,12 +8,12 @@ import { useEffect } from 'react';
 export default function Detalle() {
 
   const {movieId}= useParams();
-  const {getPelicula, pelicula}= usePeliculas();
+  const {pelicula, getPelicula}= usePeliculas();
   
   useEffect(()=>{
-    getPelicula(550);
-    // if(movieId){
-    // }
+    if(movieId){
+      getPelicula(movieId);
+    }
   },[]);
   
   console.log(pelicula);
@@ -21,7 +21,8 @@ export default function Detalle() {
 
 
   return (
-    <React.Fragment>
+   <div>
+
 <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
   <div className="py-3 sm:max-w-xl sm:mx-auto">
     <div className="bg-white shadow-lg border-gray-100 max-h-80	 border sm:rounded-3xl p-8 flex space-x-8">
@@ -36,8 +37,8 @@ export default function Detalle() {
         <div>
           <div className="text-sm text-gray-400"> Lenguaje: {pelicula.original_language}</div>
           <div className="text-sm text-gray-400"> Presupuesto: {pelicula.budget}</div>
-          <div className="text-sm text-gray-400"> Generos: {pelicula.genres.name}</div>
-          <div className="text-sm text-gray-400"> Compania: {pelicula.companies.name}</div>
+          {/* <div className="text-sm text-gray-400"> Generos: {pelicula.genres.name}</div>
+          <div className="text-sm text-gray-400"> Compania: {pelicula.companies.name}</div> */}
           <div className="text-sm text-gray-400"> Status: {pelicula.status}</div>
           <div className="text-lg text-gray-800">{pelicula.release_date}</div>
         </div>
@@ -46,7 +47,8 @@ export default function Detalle() {
     </div>
   </div>
 </div>  
-    </React.Fragment>
+</div>
+    
 )
 }
 

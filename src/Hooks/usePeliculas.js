@@ -9,8 +9,8 @@ export function usePeliculas(){
         const {data}= await fetchPeliculas(page);
         setPeliculas(data.results);
     };
-    const getPelicula= async (movie_id) =>{
-         const {data}=await fetchPelicula(movie_id);
+    const getPelicula= async (movieId) =>{
+         const {data}=await fetchPelicula(movieId);
          setPelicula(data);
     }
 
