@@ -2,19 +2,14 @@ import { usePeliculas } from '../../Hooks/usePeliculas';
 import { useEffect } from 'react';
 import React from 'react'
 import Card from '../../Components/Cards/card';
-
 export default function Inicio() {
   const {peliculas, getPeliculas}= usePeliculas();
-  let pagination = 1
-
   useEffect(()=>{
-    getPeliculas(pagination);
+    getPeliculas(1);
   },[]);
-  console.log(peliculas);
+ 
   return (
-
     <React.Fragment>
-
       <a href="#" className=" mt-6 ml-6 flex items-center mb-6 text-2xl font-semibold text-blue-700 dark:text-blue-700">
           <img 
           className="w-8 h-8 mr-2" 

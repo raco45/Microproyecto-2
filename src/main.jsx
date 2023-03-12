@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Layout from './Components/Layout/Layout'
+import { PrivateRoute } from './Components/PrivateRoute/PrivateRoute'
 
 import { BUSCADOR_URL, DETALLE_URL, INICIO_URL, LOGIN_URL, REGISTER_URL } from './Constants/urls'
 import './index.css'
@@ -18,9 +19,25 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route element={<Layout />}> 
           <Route path={LOGIN_URL} element={<Login/>} ></Route>
           <Route path={REGISTER_URL} element={<Registro/>} ></Route>
-          <Route path={INICIO_URL} element={<Inicio/>} ></Route>
-          <Route path={DETALLE_URL} element={<Detalle/>} ></Route>
-          <Route path={BUSCADOR_URL} element={<Buscador/>}></Route>
+          <Route path={INICIO_URL} 
+          element={<PrivateRoute>
+            <Inicio/>
+          </PrivateRoute>} >
+
+          </Route>
+          <Route path="/peliculas/:peliculaId" 
+          element={<PrivateRoute>
+            <Detalle/>
+          </PrivateRoute>} >
+
+          </Route>
+          <Route path={BUSCADOR_URL} 
+          element={
+          <PrivateRoute>
+            <Buscador/>
+          </PrivateRoute>}>
+
+          </Route>
         </Route>
       </Routes>
     </BrowserRouter>
