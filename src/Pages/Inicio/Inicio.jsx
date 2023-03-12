@@ -4,9 +4,14 @@ import React from 'react'
 import Card from '../../Components/Cards/card';
 export default function Inicio() {
   const {peliculas, getPeliculas}= usePeliculas();
+  const {estrenos, getEstrenos}= usePeliculas();
+
   useEffect(()=>{
     getPeliculas(1);
+    getEstrenos();
   },[]);
+
+  console.log(estrenos);
  
   return (
     <React.Fragment>

@@ -13,7 +13,7 @@ export default function Card({pelicula}){
         <div className="flex justify-between items-start">
           <h2 className="text-lg font-bold">
           <Link
-             to={`/peliculas/${pelicula.id}`}
+             to={`/inicio/peliculas/${pelicula.id}`}
             >
               {pelicula.title}
             </Link>
