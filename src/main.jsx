@@ -25,6 +25,12 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           </PrivateRoute>} >
 
           </Route>
+          <Route path="/peliculas/:peliculaId" 
+          element={<PrivateRoute>
+            <Detalle/>
+          </PrivateRoute>} >
+
+          </Route>
           <Route path={BUSCADOR_URL} 
           element={
           <PrivateRoute>

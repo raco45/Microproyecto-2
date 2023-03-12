@@ -48,7 +48,7 @@ export default function Login() {
       <a href="#" className="flex items-center mb-6 text-2xl font-semibold text-blue-700 dark:text-blue-700">
           <img 
           className="w-8 h-8 mr-2" 
-          src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo.svg" 
+          src="src\assets\pngwing.com.png" 
           alt="logo"
           />
           Neiflis    
@@ -110,17 +110,22 @@ export default function Login() {
           <div
             className="my-4 flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-neutral-300 after:mt-0.5 after:flex-1 after:border-t after:border-neutral-300">
             <p
-              className="mx-4 mb-0 text-center font-semibold dark:text-white">
+              className="mx-4 mb-0 text-center font-semibold">
                O 
             </p>
           </div>
 
           {/* <!-- Email input --> */}
           <div className="relative mb-6" data-te-input-wrapper-init>
+            <input
+              type="text"
+              className="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-700 dark:placeholder:text-neutral-700 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+              id="exampleFormControlInput2"
+              placeholder="Email address" />
             <label
-              htmlFor="email"
-              className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[1.15rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[1.15rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-neutral-200"
-              ><span>Correo electrónico</span>
+              htmlFor="exampleFormControlInput2"
+              className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] transition-all duration-200 ease-out peer-focus:-translate-y-[1.15rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[1.15rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-500 dark:peer-focus:text-neutral-500"
+              >Correo electrónico
             </label>
             <input
               className="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
@@ -132,12 +137,17 @@ export default function Login() {
               />
           </div>
 
-          {/* <!-- Password input --> */}
+          {/* <!-- Contraseña input --> */}
           <div className="relative mb-6" data-te-input-wrapper-init>
+            <input
+              type="password"
+              className="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-700 dark:placeholder:text-neutral-700 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+              id="exampleFormControlInput22"
+              placeholder="Password" />
             <label
-              htmlFor="password"
-              className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[1.15rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[1.15rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-neutral-200"
-              ><span>Contraseña</span>
+              htmlFor="exampleFormControlInput22"
+              className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[1.15rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[1.15rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-500 dark:peer-focus:text-neutral-500"
+              >Contraseña
             </label>
             <input
               className="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
