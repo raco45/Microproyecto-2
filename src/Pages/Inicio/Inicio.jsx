@@ -1,10 +1,13 @@
 import { usePeliculas } from '../../Hooks/usePeliculas';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import React from 'react'
 import Card from '../../Components/Cards/card';
 export default function Inicio() {
   const {peliculas, getPeliculas}= usePeliculas();
   const {estrenos, getEstrenos}= usePeliculas();
+
+
+
 
   useEffect(()=>{
     getPeliculas(1);
@@ -46,7 +49,10 @@ export default function Inicio() {
   xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg>
   Anterior
 </button>
-<button href="#" class="mr-96 hover:bg-blue-700 inline-flex items-center px-4 py-2 text-sm font-medium border border-gray-300 rounded-lg">
+<button href="#" 
+
+class="mr-96 hover:bg-blue-700 inline-flex items-center px-4 py-2 text-sm font-medium border 
+border-gray-300 rounded-lg">
   Siguiente
   <svg 
   aria-hidden="true" 

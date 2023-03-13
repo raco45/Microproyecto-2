@@ -1,6 +1,9 @@
 import React from 'react'
-
+import { usePeliculas } from '../../Hooks/usePeliculas';
 export default function Buscador() {
+  const {peliculaBus, getBuscar}= usePeliculas();
+
+
   return (
     
 

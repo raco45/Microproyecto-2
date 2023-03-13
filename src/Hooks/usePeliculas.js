@@ -1,10 +1,11 @@
 import {useState} from "react";
-import { fetchPelicula, fetchPeliculas, fetchUpcoming } from "../Utils/Movie-DB-API";
+import { fetchBuscar, fetchPelicula, fetchPeliculas, fetchUpcoming } from "../Utils/Movie-DB-API";
 
 export function usePeliculas(){
     const [peliculas, setPeliculas]=useState([]);
     const [pelicula, setPelicula]= useState({});
     const [estrenos, setEstrenos]=useState([]);
+    const [peliculaBus, setPeliculaBus]=([]);
 
     const getPeliculas= async (page)=>{
         const {data}= await fetchPeliculas(page);
@@ -18,14 +19,20 @@ export function usePeliculas(){
     const getEstrenos= async () =>{
          const {data}=await fetchUpcoming();
          setEstrenos(data);
+        };
+    const getBuscar= async (nombre) =>{
+         const {data}=await fetchBuscar(nombre);
+         setPeliculaBus(data);
+        };
          
-    };
 
 
     return{
         pelicula,
         peliculas,
         estrenos,
+        peliculaBus,
+        getBuscar,
         getEstrenos,
         getPeliculas,
         getPelicula,
