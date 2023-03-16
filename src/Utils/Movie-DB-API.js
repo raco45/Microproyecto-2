@@ -5,7 +5,7 @@ export async function fetchPeliculas(page){
 }
 
 export async function fetchPelicula(movie_id){
-    return axios.get(`https://api.themoviedb.org/3/movie/${movie_id}?api_key=ff3558c0ab6a27119f7571689ca82b2a`);
+    return axios.get(`https://api.themoviedb.org/3/movie/${movie_id}?api_key=ff3558c0ab6a27119f7571689ca82b2a`).then(data => {console.log(data)});
 
 }
 

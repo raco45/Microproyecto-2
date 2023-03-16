@@ -14,7 +14,6 @@ export default function Detalle() {
       getPelicula(movieId);
     }
   },[])
-  console.log(pelicula);
 
   
   return (
@@ -33,8 +32,6 @@ export default function Detalle() {
             <div>
               <div className="text-sm text-gray-400"> Lenguaje: {original_language}</div>
               <div className="text-sm text-gray-400"> Presupuesto: {budget}</div>
-              <div className="text-sm text-gray-400"> Generos: {genres}</div>
-              <div className="text-sm text-gray-400"> Compania: {companies}</div>
               <div className="text-sm text-gray-400"> Status: {status}</div>
               <div className="text-lg text-gray-800">{release_date}</div>
             </div>

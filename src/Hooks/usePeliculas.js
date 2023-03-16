@@ -11,7 +11,7 @@ export function usePeliculas(){
         setPeliculas(data.results);
     };
     const getPelicula= async (movieId) =>{
-         const {data}=await fetchPelicula(movieId);
+         const data=await fetchPelicula(movieId);
          setPelicula(data);
     };
     const getEstrenos= async () =>{
