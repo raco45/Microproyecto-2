@@ -2,20 +2,30 @@ import { usePeliculas } from '../../Hooks/usePeliculas';
 import { useEffect, useState } from 'react';
 import React from 'react'
 import Card from '../../Components/Cards/card';
+
 export default function Inicio() {
   const {peliculas, getPeliculas}= usePeliculas();
   const {estrenos, getEstrenos}= usePeliculas();
+  let [page, setPage]=useState(1);
+  
+
+  const handleNext= ()=>{
+    setPage((page+=1));
+    getPeliculas(page);
+  };
+  const handleBack= ()=>{
+    setPage((page-=1));
+    getPeliculas(page);
+  };
 
 
-
-
-  useEffect(()=>{
-    getPeliculas(1);
+  useEffect((page)=>{
+    getPeliculas(page);
     getEstrenos();
   },[]);
 
   console.log(estrenos);
- 
+  console.log(peliculas);
   return (
     <React.Fragment>
       <a href="#" className=" mt-6 ml-6 flex items-center mb-6 text-2xl font-semibold text-blue-700 dark:text-blue-700">
@@ -40,7 +50,9 @@ export default function Inicio() {
             ))
           }
 
-<button href="#" class="ml-96 hover:bg-blue-700 inline-flex items-center px-4 py-2 mr-3 text-sm font-medium border border-gray-300 rounded-lg ">
+<button href="#"
+onClick={handleBack} 
+class="ml-96 hover:bg-blue-700 inline-flex items-center px-4 py-2 mr-3 text-sm font-medium border border-gray-300 rounded-lg ">
   <svg 
   aria-hidden="true" 
   class="w-5 h-5 mr-2" 
@@ -50,7 +62,7 @@ export default function Inicio() {
   Anterior
 </button>
 <button href="#" 
-
+onClick={handleNext}
 class="mr-96 hover:bg-blue-700 inline-flex items-center px-4 py-2 text-sm font-medium border 
 border-gray-300 rounded-lg">
   Siguiente

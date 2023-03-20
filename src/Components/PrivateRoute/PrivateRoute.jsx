@@ -4,6 +4,7 @@ import { useUser } from "../../Contexts/userContext";
 
 
 export function PrivateRoute({children}){
+    console.log("Imprimiendo UseUser", useUser())
     const {user, isLoading}=useUser();
     if(isLoading){
         return <h1> Loading User</h1>

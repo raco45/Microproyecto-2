@@ -1,10 +1,13 @@
 import React from 'react'
 
-function Genre(gen) {
+function Genre({genero}) {
   return (
-    <div > 
-    <h2>Generos: {gen.name}</h2>
+    <React.Fragment>
+
+    <div className="text-sm text-gray-400"> 
+      {genero.name}
     </div>
+    </React.Fragment>
   )
 }
 

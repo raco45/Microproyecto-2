@@ -5,7 +5,9 @@ export function usePeliculas(){
     const [peliculas, setPeliculas]=useState([]);
     const [pelicula, setPelicula]= useState({});
     const [estrenos, setEstrenos]=useState([]);
-    const [peliculaBus, setPeliculaBus]=([]);
+    const [peliculaBus, setPeliculaBus]=useState([]);
+    const [page, setPage]=useState(1);
+    const [genres, setGenres]=useState([]);
 
     const getPeliculas= async (page)=>{
         const {data}= await fetchPeliculas(page);
@@ -15,6 +17,10 @@ export function usePeliculas(){
          const {data}=await fetchPelicula(movieId);
          setPelicula(data);
          console.log(data);
+    };
+    const getGenres= async (movieId)=>{
+        const {data}=await fetchPelicula(movieId);
+        setGenres(data.genres);
     };
     const getEstrenos= async () =>{
          const {data}=await fetchUpcoming();
@@ -31,6 +37,8 @@ export function usePeliculas(){
         pelicula,
         peliculas,
         estrenos,
+        genres,
+        getGenres,
         peliculaBus,
         getBuscar,
         getEstrenos,

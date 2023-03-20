@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Compas(com) {
+function Compas({com}) {
   return (
     <div > 
     <h2>
 
-    Compania: {com.name}
+    {com.name}
     </h2>
     </div>
   )
